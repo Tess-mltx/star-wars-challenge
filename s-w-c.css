@@ -19,13 +19,13 @@ body {
     color: yellow;
     transform: rotateX(45deg);
     font-size: xx-large;
-    animation: TextWar 20s linear forwards;
+    animation: TextWar 10s linear forwards;
     width: auto;
     height: auto;
 }
 
 img {
-    position: fixed;
+    align-items: center;
     top: 0px;
     left: 0px;
     width: 10%;
