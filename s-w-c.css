@@ -5,20 +5,28 @@ body {
 
 @keyframes TextWar {
     0% {
-        transform: translateY(90%) rotateX(60deg);
+        transform: translateY(90%) rotateX(45deg);
       }
       100% {
-        transform: translateY(0%) rotateX(60deg);
+        transform: translateY(0%) rotateX(45deg);
       }
 }
-div {
-    color: yellow;
+.container {
+    perspective: 500px;
+}
+.slide {
     text-align: center;
-    transform: rotateX(60deg);
+    color: yellow;
+    transform: rotateX(45deg);
     font-size: xx-large;
-    animation: TextWar 20s linear infinite;
+    animation: TextWar 20s linear forwards;
     width: auto;
     height: auto;
-    position: absolute;
-    /* top: 100vh; */
+}
+
+img {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 10%;
 }
