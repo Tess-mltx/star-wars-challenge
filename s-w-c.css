@@ -1,0 +1,32 @@
+body {
+    background-image: url(https://images.pexels.com/photos/998641/pexels-photo-998641.jpeg?cs=srgb&dl=pexels-francesco-ungaro-998641.jpg&fm=jpg);
+    overflow: hidden;
+}
+
+@keyframes TextWar {
+    0% {
+        transform: translateY(90%) rotateX(45deg);
+      }
+      100% {
+        transform: translateY(0%) rotateX(45deg);
+      }
+}
+.container {
+    perspective: 500px;
+}
+.slide {
+    text-align: center;
+    color: yellow;
+    transform: rotateX(45deg);
+    font-size: xx-large;
+    animation: TextWar 10s linear forwards;
+    width: auto;
+    height: auto;
+}
+
+img {
+    align-items: center;
+    top: 0px;
+    left: 0px;
+    width: 10%;
+}
