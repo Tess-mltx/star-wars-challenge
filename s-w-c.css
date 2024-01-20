@@ -1,27 +1,31 @@
 body {
     background-image: url(https://images.pexels.com/photos/998641/pexels-photo-998641.jpeg?cs=srgb&dl=pexels-francesco-ungaro-998641.jpg&fm=jpg);
     overflow: hidden;
+    background-color: black;
 }
 
 @keyframes TextWar {
     0% {
-        transform: translateY(90%) rotateX(45deg);
+        transform: translateY(100%) rotateX(30deg);
       }
       100% {
-        transform: translateY(0%) rotateX(45deg);
+        transform:  rotateX(45deg) translate3d(0px, -100%, 0px);
       }
 }
 .container {
-    perspective: 500px;
+    perspective: 100px;
+
+
 }
 .slide {
+    transform: rotateX(45deg);
     text-align: center;
     color: yellow;
-    transform: rotateX(45deg);
     font-size: xx-large;
-    animation: TextWar 10s linear forwards;
-    width: auto;
-    height: auto;
+    animation: TextWar 20s linear forwards;
+    max-width: 80%;
+    margin: auto;
+
 }
 
 img {
